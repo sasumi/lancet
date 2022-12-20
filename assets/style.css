@@ -1,0 +1,143 @@
+@charset "UTF-8";
+@import url("common.css");
+
+html{
+	color:var(--color);
+	background:var(--background-color);
+	font-size:var(--font-size);
+	font-family:var(--font-family);
+	line-height:var(--line-height);
+}
+
+*:focus{
+	outline:1px solid var(--link-color);
+	box-shadow:var(--focus-shadow);
+}
+
+header{
+	padding:0.5em 1em;
+	color:var(--color-inverted);
+	background-color:var(--background-color-inverted);
+}
+
+h1{
+	font-size:1.2rem;
+}
+
+h1:before{
+	content:"";
+	display:inline-block;
+	width:1.5rem;
+	height:1.5rem;
+	background:url("logo.png") no-repeat;
+	background-size:contain;
+	margin:0 0.25em -5px 0
+}
+
+#guid{
+	float:right;
+	color:gray;
+	margin:-1.5em 0 0;
+}
+
+.check-time{
+	color:#cccccc;
+	font-size:0.8rem;
+	font-style:italic;
+	padding:0 1em;
+}
+
+.url-form{float:right;margin-top:-0.5em;}
+
+.time-cost{color:gray; padding:0 1em;}
+
+.content-wrap{
+	max-width:1000px;
+	margin:0 auto;
+	display:block;
+}
+
+.content{
+	padding:0 1em 3em 1em;
+}
+
+.base-info{padding:1em 0 0 0;}
+.base-info label ~ label{margin-left:4em;}
+
+.result{
+	background-color:var(--section-background-color);
+	margin:1em 0;
+	border:1px solid #dddddd;
+	box-shadow:var(--panel-shadow);
+}
+
+.result > dt{
+	padding:1em;
+	border-bottom:1px solid #dddddd;
+}
+
+.result > dt .button {
+	float:right;
+	margin-top:-0.5em;
+}
+
+.result > dd{
+	padding:1em;
+	opacity:0.8;
+}
+
+.result ul{
+	overflow:hidden;
+}
+
+.result li{
+	float:left;
+	width:50%;
+	margin:.5em 0;
+	display:flex;
+}
+.result li.line{
+	float:none;
+	width:100%;
+}
+
+.result li label{
+	color:var(--color);
+	min-width:10em;
+	max-width:70%;
+	font-weight:bold;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+label:after{content:"："}
+
+.share-section{
+	padding:0.5em 0;
+	position:fixed;
+	width:100%;
+	bottom:0;
+	text-align:center;;
+}
+
+.share-section:before{
+	content:"";
+	display:block;
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	opacity:0.2;
+	top:0;
+	padding:0.5em 0;
+	background-color:var(--color)
+}
+
+#dpi{
+	height:1in;
+	left:-100%;
+	position:absolute;
+	top:-100%;
+	width:1in;
+}

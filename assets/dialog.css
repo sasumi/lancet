@@ -1,0 +1,81 @@
+/**
+* dialog结构：
+        dialog.qwc-dialog>
+                .dialog-title <optional>
+                +.dialog-close <optional>
+                +.dialog-content <required>
+                +.dialog-operation <optional>
+**/
+.qwc-dialog{
+	position:fixed;
+	z-index:10;
+	background-color:var(--color-inverted);
+	border:1px solid #aaa;
+	box-shadow:0 0 0px 20000px #00000059;
+	/* display: block; 这里不写，可以提供给 <form method="dialog"> 使用关闭 */
+	margin:0;
+	padding:0;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+
+.qwc-dialog .dialog-title{
+	padding:0.5em .5em;
+	opacity:0.5;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+	max-width:calc(100% - 30px);
+}
+
+.qwc-dialog .dialog-top-close{
+	font-size:1.5em;
+	cursor:pointer;
+	position:absolute;
+	right:0;
+	top:0;
+	width:1.25em;
+	display:block;
+	line-height:1em;
+	color:var(--color);
+	opacity:0.5;
+	transition:all 0.1s linear;
+	box-sizing:border-box;
+	height:1.25em;
+	text-align:center;
+}
+
+.qwc-dialog .dialog-top-close:before{
+	content:"×"
+}
+
+.qwc-dialog .dialog-top-close:hover{
+	opacity:1
+}
+
+.qwc-dialog .dialog-content{
+	max-height:calc(100vh - 100px);
+	max-width:calc(100vw - 100px);
+	min-width:300px;
+	padding:0.5em 1em;
+	overflow:auto;
+}
+
+.qwc-dialog .dialog-operation{
+	padding:0.5em;
+	text-align:right;
+}
+
+.qwc-dialog form[method="dialog"]{
+	display:inline-block;
+}
+
+.qwc-dialog::backdrop{
+	backdrop-filter:blur(10px);
+}
+
+.qwc-dialog .dialog-operation .qwc-button{
+	margin:0 0.25em;
+}
+.qwc-dialog-prompt .dialog-content{padding:2em 1em;text-align:center;}
