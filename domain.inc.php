@@ -57,10 +57,8 @@
 		let dlg = showDialog({
 			title: '添加测试域名',
 			content: `
-					<div style="padding:0 2em 2em;">
-						<input type="text" placeholder="请输入需要检测的域名，格式如：http://domain.com" style="width:80%">
-						<input type="submit" value="添加">
-					</div>
+					<input type="text" placeholder="请输入需要检测的域名，格式如：http://domain.com">
+					<input type="submit" value="添加">
 				`
 		});
 		dlg.querySelector('input[type=submit]').addEventListener('click', e=>{

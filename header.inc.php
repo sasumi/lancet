@@ -32,22 +32,26 @@ list($id, $check_timestamp) = Record::readRecord($id);
 	</div>
 </header>
 <div class="content-wrap">
-	<div class="base-info">
-		<label><?=Record::isMime() ? '当前系统':'';?>检测ID</label>
-		<var><?=$id;?></var>
-		<label>检测时间</label>
-		<var>
-			<script>
-				let d = new Date(<?=$check_timestamp*1000;?>);
-				let text = d.getFullYear() + '年'
-					+ d.getMonth().toString().padStart(2,'0') + '月'
-					+ d.getDate().toString().padStart(2,'0') + '日 '
-					+ d.getHours().toString().padStart(2,'0') + '时'
-					+ d.getMinutes().toString().padStart(2,'0') + '分'
-					+ d.getSeconds().toString().padStart(2,'0') + '秒';
-				document.write(text);
-			</script>
-		</var>
-	</div>
+	<ul class="base-info">
+		<li>
+			<label><?=Record::isMime() ? '当前系统' : '';?>检测ID</label>
+			<var><?=$id;?></var>
+		</li>
+		<li>
+			<label>检测时间</label>
+			<var>
+				<script>
+					let d = new Date(<?=$check_timestamp*1000;?>);
+					let text = d.getFullYear() + '年'
+						+ d.getMonth().toString().padStart(2, '0') + '月'
+						+ d.getDate().toString().padStart(2, '0') + '日 '
+						+ d.getHours().toString().padStart(2, '0') + '时'
+						+ d.getMinutes().toString().padStart(2, '0') + '分'
+						+ d.getSeconds().toString().padStart(2, '0') + '秒';
+					document.write(text);
+				</script>
+			</var>
+		</li>
+	</ul>
 </div>
 	<section class="content content-wrap" id="report-content">

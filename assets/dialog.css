@@ -18,6 +18,7 @@
 	top:50%;
 	left:50%;
 	transform:translate(-50%, -50%);
+	width:500px; /** default width**/
 }
 
 .qwc-dialog .dialog-title{
@@ -55,10 +56,11 @@
 }
 
 .qwc-dialog .dialog-content{
-	max-height:calc(100vh - 100px);
-	max-width:calc(100vw - 100px);
+	max-height:calc(100vh - 2em);
+	max-width: calc(100vw - 2em);
 	min-width:300px;
-	padding:0.5em 1em;
+	padding:2em;
+	text-align:center;
 	overflow:auto;
 }
 

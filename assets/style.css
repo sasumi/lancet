@@ -61,8 +61,9 @@ h1:before{
 	padding:0 1em 3em 1em;
 }
 
-.base-info{padding:1em 0 0 0;}
-.base-info label ~ label{margin-left:4em;}
+.base-info{padding:1em 0 0 0; overflow:hidden;}
+.base-info li{float:left;margin-right:4em;}
+.base-info li:last-child{margin-right:0;}
 
 .result{
 	background-color:var(--section-background-color);
@@ -76,7 +77,7 @@ h1:before{
 	border-bottom:1px solid #dddddd;
 }
 
-.result > dt .button {
+.result > dt .button{
 	float:right;
 	margin-top:-0.5em;
 }
@@ -140,4 +141,56 @@ label:after{content:"："}
 	position:absolute;
 	top:-100%;
 	width:1in;
+}
+
+@media (max-width:860px){
+	.base-info{margin:0 1em;}
+	.base-info li{float:none;}
+	
+	.content {
+		padding:0 0 5em 0;
+	}
+	
+	.result > dt {
+		padding:1em 1em 0.5em 1em;
+		border-bottom:none;
+	}
+	
+	.result > dd {
+		padding:0 1em 1em;
+	}
+	
+	.result {
+		border:none;
+	}
+	.result li{float:none;
+		width:100%;}
+	
+	.result li label{
+		white-space:nowrap;
+		min-width:8em;
+	}
+	
+	.result li var{
+		word-break:break-all;
+	}
+	
+	#domain-check-list li label {
+		min-width:17em;
+		font-weight:normal;
+	}
+	
+	body .qwc-dialog {
+		width:calc(100% -  2em)
+	}
+	
+	body .qwc-dialog .dialog-content {
+		text-align:left;
+	}
+	
+	body .qwc-dialog input[type=text] {
+		display:block;
+		width:100%;
+		margin-bottom:1em;
+	}
 }

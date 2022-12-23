@@ -26,7 +26,7 @@ if(!$id){
 
 	document.querySelector('#copy-url-btn').addEventListener('click', e => {
 		navigator.clipboard.writeText(location.href).then(e => {
-			alert('链接已复制');
+			showInfo('分享链接已复制');
 		});
 	});
 
@@ -51,7 +51,7 @@ if(!$id){
 			xhr.open('POST', '?save=1&id=<?=$id;?>', true);
 			xhr.responseType = 'json';
 			xhr.onload = function(e){
-				showInfo('saved');
+				showInfo('已保存结果');
 			};
 			let formData = new FormData();
 			formData.append('body', contentHtml);
