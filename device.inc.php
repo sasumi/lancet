@@ -7,6 +7,13 @@
 				<var><script>document.write(jscd.os+'('+jscd.osVersion+')')</script></var>
 			</li>
 			<li>
+				<label>时区</label>
+				<var><script>
+						document.write(Intl.DateTimeFormat().resolvedOptions().timeZone + ", UTC+" + (-(new Date()).getTimezoneOffset()/60));
+
+					</script></var>
+			</li>
+			<li>
 				<label>浏览器</label>
 				<var><script>document.write(jscd.browser+'('+jscd.browserMajorVersion+'/'+jscd.browserVersion+')')</script></var>
 			</li>
