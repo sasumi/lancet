@@ -74,6 +74,7 @@ const imageDownloadTestWrite = (url) => {
 			let start = (new Date()).getTime();
 			xhr = new XMLHttpRequest();
 			xhr.open('GET', url, true);
+			xhr.setRequestHeader("Cache-Control", "no-cache, no-store, max-age=0");
 			xhr.responseType = 'arraybuffer';
 			xhr.onload = function(e){
 				n.innerHTML = yesOrNot(true, '测试完成')

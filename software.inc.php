@@ -17,6 +17,18 @@
 				</var>
 			</li>
 			<li>
+				<label>sessionStorage</label>
+				<var>
+					<script>document.write(supportText(window.sessionStorage))</script>
+				</var>
+			</li>
+			<li>
+				<label>indexedDB</label>
+				<var>
+					<script>document.write(supportText(window.indexedDB))</script>
+				</var>
+			</li>
+			<li>
 				<label>Cookie</label>
 				<var>
 					<script>document.write(supportText(navigator.cookieEnabled))</script>

@@ -12,7 +12,7 @@
 			</li>
 			<li>
 				<label>屏幕大小</label>
-				<var><script>document.write(jscd.screen)</script></var>
+				<var><script>document.write(jscd.screen+'像素')</script></var>
 			</li>
 			<li>
 				<label>屏幕DPI</label>

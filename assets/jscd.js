@@ -4,8 +4,8 @@
 	// screen
 	let screenSize = '';
 	if(screen.width){
-		width = (screen.width) ? screen.width : '';
-		height = (screen.height) ? screen.height : '';
+		let width = (screen.width) ? screen.width : '';
+		let height = (screen.height) ? screen.height : '';
 		screenSize += '' + width + " x " + height;
 	}
 
