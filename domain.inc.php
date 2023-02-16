@@ -19,6 +19,15 @@
 				<script>document.write(checkDomainWrite('https://www.xiaoe-tech.com'));</script>
 			</li>
 			<li>
+				<script>document.write(checkDomainWrite('https://app.xiaoe-tech.com'));</script>
+			</li>
+			<li>
+				<script>document.write(checkDomainWrite('https://static-resource.xiaoeknow.com'));</script>
+			</li>
+			<li>
+				<script>document.write(checkDomainWrite('https://assets.cdn.xiaoeknow.com'));</script>
+			</li>
+			<li>
 				<script>document.write(checkDomainWrite('http://admin.xiaoe-tech.com'));</script>
 			</li>
 			<li>
