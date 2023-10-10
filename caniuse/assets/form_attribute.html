@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://caniuse.com/tests/form_attribute.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body style="overflow:hidden">
+
+<form id="myform" action="https://caniuse.com/tests/form_attribute.html?" method="get">
+<input type="hidden" name="pass" value="1">
+</form>
+<input type="submit" form="myform" value="test" onclick="document.body.style.background=&#39;red&#39;;">
+
+<script>
+if(location.href.indexOf('?') >= 0) {
+	document.body.style.background = 'red';
+	document.body.innerHTML = '';
+}
+if(location.href.indexOf('?pass=1') >= 0) {
+	document.body.style.background = 'lime';
+
+}
+</script>
+
+
+</body></html>

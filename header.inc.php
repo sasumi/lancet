@@ -29,6 +29,9 @@ list($id, $check_timestamp) = Record::readRecord($id);
 <header>
 	<div class="content-wrap">
 		<h1>小鹅通网络检测</h1>
+		<ul class="header-navs">
+			<li><a href="/caniuse/index.html">浏览器能力检测</a></li>
+		</ul>
 	</div>
 </header>
 <div class="content-wrap">

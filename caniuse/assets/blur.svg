@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<svg width="70" height="70" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <defs>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_1_blur">
+   <feGaussianBlur stdDeviation="10" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <circle filter="url(#svg_1_blur)" id="svg_1" r="16.878906" cy="35" cx="35" stroke="#AAAAAA" fill="#ff7f00"/>
+ </g>
+</svg>

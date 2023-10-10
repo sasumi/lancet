@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://caniuse.com/tests/server-timing.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body style="background: lime;">
+<script src="./server-timing.php"></script>
+<script>
+var entries = performance.getEntriesByType('resource');
+try {
+ if (entries[0].serverTiming
+ 		&& entries[0].serverTiming[0].duration === 123
+ 		&& entries[0].serverTiming[0].name === 'mytest'
+ 		&& entries[0].serverTiming[1].duration === 56
+ 		&& entries[0].serverTiming[1].name === 'mytest2') {
+ 	document.body.style.background = 'lime';
+ } else {
+ 	document.body.style.background = 'red';
+ }
+} catch(e) {
+ 	document.body.style.background = 'red';
+}
+</script>
+
+
+</body></html>

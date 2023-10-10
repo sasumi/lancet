@@ -1,0 +1,13 @@
+
+<!-- saved from url=(0048)https://caniuse.com/tests/permissions-policy.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><button>Try geolocation</button> - Should <b>not</b> work due to
+ iframe attribute: allow="geolocation=()"
+}
+
+<script>
+document.querySelector('button').onclick = function() {
+ navigator.geolocation.getCurrentPosition(function() {
+ 	document.body.style.background = 'red';
+ });
+};
+</script></body></html>

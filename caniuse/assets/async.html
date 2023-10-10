@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://caniuse.com/tests/async.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body class="pass">
+<style>
+.pass {
+	background: lime;
+}
+
+.fail {
+	background: red;	
+}
+</style>
+
+<script>
+var async_loaded = false;
+</script>
+<script async="" src="./async_js.php"></script>
+<script>
+if (async_loaded) {
+	document.body.className = 'fail';
+} else {
+	document.body.className = 'pass';
+}
+</script>
+
+
+</body></html>

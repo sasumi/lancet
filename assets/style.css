@@ -19,6 +19,13 @@ header{
 	color:var(--color-inverted);
 	background-color:var(--background-color-inverted);
 }
+header a {color:white; text-decoration:none;}
+
+header .header-navs {float:right; margin-top:-1.5em;}
+
+header .header-navs li {
+	float:left;
+}
 
 h1{
 	font-size:1.2rem;

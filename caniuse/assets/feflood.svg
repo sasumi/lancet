@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no"?>
+<svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+	<defs> 
+	<filter id="myfilter"> 
+		<feFlood flood-color="lime"/>
+	</filter> 
+	</defs>
+	<rect width="30" height="30" fill="red" filter="url(#myfilter)" />
+</svg>
+
